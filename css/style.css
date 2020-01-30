@@ -8,7 +8,9 @@ body {
   display: flex;
   height: 100vh;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
 }
 
 hr {
@@ -22,7 +24,6 @@ hr {
   background-color: black;
   border-radius: 20px;
   color: white;
-  text-align: center;
   transition: height 2s ease-out;
   position: absolute;
   left: 0;
@@ -33,9 +34,31 @@ hr {
   height: 90vh;
 }
 
-#conteneurGauche div, #conteneurDroit div {
+#conteneurGauche > div, #conteneurDroit > div {
+  padding: 40px;
   background-color: lightgray;
   width: 600px;
   height: 250px;
   border-radius: 20px;
+}
+
+#exercice1 div {
+  width: 100px;
+  height: 100px;
+  background-color: darkorange;
+  margin: 20px auto;
+  transform: rotate(360deg);
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
