@@ -42,6 +42,8 @@ hr {
   border-radius: 20px;
 }
 
+/* ----- EXERCICE 1 ----- */
+
 #exercice1 div {
   width: 100px;
   height: 100px;
@@ -65,5 +67,53 @@ hr {
   100% {
     transform: rotate(1080deg);
     background-color: red;
+  }
+}
+
+/* ----- EXERCICE 2 ----- */
+
+#exercice2 > h2 {
+  margin-bottom: 20px;
+}
+
+#exercice2 > div {
+  width: 20px;
+  height: 130px;
+  border: 1px solid green;
+  margin: auto;
+}
+
+#exercice2 > div > div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: green;
+  animation: chute 3s ease-in-out infinite;
+}
+
+@keyframes chute {
+  0% {
+    transform: translateY(0);
+  }
+  14% {
+    transform: translateY(110px);
+  }
+  28% {
+    transform: translateY(60px);
+  }
+  42% {
+    transform: translateY(110px);
+  }
+  56% {
+    transform: translateY(80px);
+  }
+  70% {
+    transform: translateY(110px);
+  }
+  84% {
+    transform: translateY(95px);
+  }
+  100% {
+    transform: translateY(110px);
   }
 }
