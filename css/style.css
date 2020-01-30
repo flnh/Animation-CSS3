@@ -47,7 +47,8 @@ hr {
   height: 100px;
   background-color: yellow;
   margin: 20px auto;
-  animation: rotation 8s alternate infinite;
+  animation: rotation 7s linear infinite alternate;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes rotation {
@@ -56,11 +57,9 @@ hr {
     background-color: yellow;
   }
   33% {
-    transform: rotate(360deg);
     background-color: orange;
   }
   66% {
-    transform: rotate(720deg);
     background-color: darkorange;
   }
   100% {
