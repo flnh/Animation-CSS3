@@ -45,20 +45,26 @@ hr {
 #exercice1 div {
   width: 100px;
   height: 100px;
-  background-color: darkorange;
+  background-color: yellow;
   margin: 20px auto;
-  transform: rotate(360deg);
-  animation: rotation 2s linear infinite;
+  animation: rotation 8s alternate infinite;
 }
 
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
+    background-color: yellow;
   }
-  50% {
-    transform: rotate(180deg);
+  33% {
+    transform: rotate(360deg);
+    background-color: orange;
+  }
+  66% {
+    transform: rotate(720deg);
+    background-color: darkorange;
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(1080deg);
+    background-color: red;
   }
 }
