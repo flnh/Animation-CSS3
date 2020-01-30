@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+#menu {
+  width: 80px;
+  margin: 10px 8px;
+  height: 20px;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transition: height 2s ease-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#menu:hover {
+  height: 90vh;
+}
+
+#conteneurGauche div, #conteneurDroit div {
+  background-color: lightgray;
+  width: 600px;
+  height: 250px;
+  border-radius: 20px;
+}
