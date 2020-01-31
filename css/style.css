@@ -42,6 +42,10 @@ hr {
   border-radius: 20px;
 }
 
+#conteneurDroit > div:nth-of-type(2) {
+  height: 540px;
+}
+
 /* ----- EXERCICE 1 ----- */
 
 #exercice1 div {
@@ -253,3 +257,5 @@ hr {
     background-color: green;
   }
 }
+
+/* ----- EXERCICE 4 ----- */
