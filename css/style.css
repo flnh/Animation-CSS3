@@ -165,3 +165,91 @@ hr {
     background-color: black;
   }
 }
+
+/* ----- EXERCICE 4 ----- */
+
+#exercice4 div{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 520px;
+  top: -20px;
+}
+
+#exercice4 div:nth-of-type(1) {
+  top: -40px;
+  animation: faireTourRectangle 8s linear infinite, changerCouleur 8s linear infinite;
+}
+
+#exercice4 div:nth-of-type(2) {
+  top: -60px;
+  animation: faireTourRectangle 8s 0.7s linear infinite, changerCouleur 8s 0.7s linear infinite;
+}
+
+#exercice4 div:nth-of-type(3) {
+  top: -80px;
+  animation: faireTourRectangle 8s 1.4s linear infinite, changerCouleur 8s 1.4s linear infinite;
+}
+
+#exercice4 div:nth-of-type(4) {
+  top: -100px;
+  animation: faireTourRectangle 8s 2.1s linear infinite, changerCouleur 8s 2.1s linear infinite;
+}
+
+#exercice4 div:nth-of-type(5) {
+  top: -120px;
+  animation: faireTourRectangle 8s 2.8s linear infinite, changerCouleur 8s 2.8s linear infinite;
+}
+
+#exercice4 div:nth-of-type(6) {
+  top: -140px;
+  animation: faireTourRectangle 8s 3.5s linear infinite, changerCouleur 8s 3.5s linear infinite;
+}
+
+@keyframes faireTourRectangle{
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(0, 190px) rotate(360deg);
+  }
+  50% {
+    transform: translate(-540px, 190px) rotate(720deg);
+  }
+  80% {
+    transform: translate(-540px, 0) rotate(1080deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(1440deg);
+  }
+}
+
+@keyframes changerCouleur {
+  0% {
+    background-color: green;
+  }
+  15% {
+    background-color: rgba(255, 99, 71, 0.5);
+  }
+  30% {
+    background-color: tomato;
+  }
+  40% {
+    background-color: rgba(135, 206, 235, 0.5);
+  }
+  50% {
+    background-color: lightskyblue;
+  }
+  65% {
+    background-color: rgba(255, 165, 0, 0.5);
+  }
+  80% {
+    background-color: orange;
+  }
+  90% {
+    background-color: rgb(0, 128, 0, 0.5);
+  }
+  100% {
+    background-color: green;
+  }
+}
