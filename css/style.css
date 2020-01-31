@@ -117,3 +117,51 @@ hr {
     transform: translateY(110px);
   }
 }
+
+/* ----- EXERCICE 3 ----- */
+
+#exercice3 > div {
+  width: 330px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#exercice3 > div div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#exercice3 > div div:nth-of-type(1) {
+  animation: loading 3s linear infinite;
+}
+
+#exercice3 > div div:nth-of-type(2) {
+  animation: loading 3s 1000ms linear infinite;
+}
+
+#exercice3 > div div:nth-of-type(3) {
+  animation: loading 3s 2000ms linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: grey;
+  }
+  60% {
+    background-color: white;
+  }
+  70% {
+    background-color: grey;
+  }
+  100% {
+    background-color: black;
+  }
+}
