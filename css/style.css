@@ -260,3 +260,79 @@ hr {
 
 /* ----- EXERCICE 5 ----- */
 
+#conteneur {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+
+#conteneurInterieur {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: 90px 90px;
+  animation: carouselRotation 5s linear infinite;
+}
+
+@keyframes carouselRotation {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+#conteneurInterieur div {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 90px;
+  left: 90px;
+  border: 1px solid black;
+}
+
+#conteneurInterieur div:nth-of-type(1) {
+  background-color: red;
+  transform: rotateY(0deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(2) {
+  background-color: green;
+  transform: rotateY(40deg) translateZ(80px);
+}
+#conteneurInterieur div:nth-of-type(3) {
+  background-color: yellow;
+  transform: rotateY(80deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(4) {
+  background-color: blue;
+  transform: rotateY(120deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(5) {
+  background-color: lightcoral;
+  transform: rotateY(160deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(6) {
+  background-color: brown;
+  transform: rotateY(200deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(7) {
+  background-color: black;
+  transform: rotateY(240deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(8) {
+  background-color: tomato;
+  transform: rotateY(280deg) translateZ(80px);
+}
+
+#conteneurInterieur div:nth-of-type(9) {
+  background-color: white;
+  transform: rotateY(320deg) translateZ(80px);
+}
