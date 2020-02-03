@@ -178,6 +178,7 @@ hr {
   position: relative;
   left: 520px;
   top: -20px;
+  color: lightgray;
 }
 
 #exercice4 div:nth-of-type(1) {
@@ -231,6 +232,7 @@ hr {
 @keyframes changerCouleur {
   0% {
     background-color: green;
+    color: black;
   }
   15% {
     background-color: rgba(255, 99, 71, 0.5);
@@ -255,6 +257,7 @@ hr {
   }
   100% {
     background-color: green;
+    color: black;
   }
 }
 
